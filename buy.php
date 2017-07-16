@@ -1,0 +1,35 @@
+<?php
+ session_start();
+ $c=0;
+ date_default_timezone_set("Asia/Kolkata");
+ echo "Transaction Successfull";
+ $servername="localhost";
+ $username="root";
+ $password="Weiss-2sfj";
+ $dbname="users";
+ $date=date("Y-m-d");
+ $name="";
+ $product="";
+ $seller="";
+ $id="";
+ $dbc=@mysqli_connect($servername,$username,$password,$dbname);
+ $query="INSERT INTO trans(name,product,created,seller,id)    VALUES(?,?,?,?,?)";
+ $stmt=mysqli_prepare($dbc,$query);
+ while($c<sizeof($_SESSION['cartname']))
+ {$name=$_SESSION['uname'];
+  $product=$_SESSION['cartname'][$c];
+  $seller=$_SESSION['cartseller'][$c];
+  $id=$_SESSION['cartid'][$c];
+ mysqli_stmt_bind_param($stmt,"sssss",$name,$product,$date,$seller,$id);
+  mysqli_execute($stmt);
+ ++$c;
+}
+array_splice($_SESSION['cartname'],0,sizeof($_SESSION['cartname']));
+array_splice($_SESSION['cartseller'],0,sizeof($_SESSION['cartseller']));
+array_splice($_SESSION['cartid'],0,sizeof($_SESSION['cartid']));
+array_splice($_SESSION['cartprice'],0,sizeof($_SESSION['cartprice']));
+if($_SESSION['uname']!="")
+header("Refresh:0;url=special.php");
+else
+header("Refresh:0;url=welcome.php");
+?>

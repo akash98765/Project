@@ -1,0 +1,86 @@
+ul
+{list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#333333;
+}
+li
+{float:left;
+}
+li a
+{display:block;
+color:white;
+padding:20px;
+margin:5px;
+text-align:center;
+text-decoration:none;
+}
+li a:hover
+{background-color:#111111;
+text-decoration:underline;
+}
+#d2
+{ 
+position:relative;
+width:100%;
+}
+.d1 img
+{
+position:relative;
+top:0px;
+left:560px;
+}
+h5
+{display:inline;
+}
+#t1
+{border-collpase:collapse;
+width:50%;
+background-color:none;
+}
+#t1 td
+{padding:10px;
+text-align:left;
+}
+#t1 tr:nth-child(even){
+background-color:#f2f2f2;
+}
+#t1 tr:hover
+{background-color:#ddd;
+}
+.t2
+{border-collapse:collapse;
+width:100%;
+}
+.t2 td,th
+{padding:10px;
+text-align:left;
+}
+.t2 tr:nth-child(even){
+background-color:#f2f2f2;
+}
+.t2 tr:hover{
+background-color:#ddd;
+}
+#a2
+{background-color:#4CAF50;
+border:none;
+color:white;
+padding:10px 15px;
+text-align:center;
+text-decoration:none;
+}
+.get
+{width:150px;
+float:left;
+margin:1%; 
+}
+#a3
+{background-color:lightsalmon;
+border:none;
+color:white;
+padding:10px 15px;
+text-align:center;
+text-decoration:none;
+}

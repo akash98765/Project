@@ -1,0 +1,49 @@
+ul
+{list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#333333;
+}
+li
+{float:left;
+}
+li a
+{display:block;
+color:white;
+padding:20px;
+margin:5px;
+text-align:center;
+text-decoration:none;
+}
+li a:hover
+{background-color:#111111;
+text-decoration:underline;
+}
+#d2
+{ 
+position:relative;
+width:100%;
+}
+#t2
+{border-collapse:collapse;
+width:100%;
+}
+#t2 td,th
+{padding:10px;
+text-align:left;
+}
+#t2 tr:nth-child(even){
+background-color:#f2f2f2;
+}
+#t2 tr:hover{
+background-color:#ddd;
+}
+#buy
+{
+background-color:lightblue;
+text-color:green;
+border:none;
+padding:3px;
+text-decoration:none;
+}

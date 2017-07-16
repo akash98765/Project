@@ -1,0 +1,28 @@
+<pages>
+<link>
+<title>Books</title>
+<url>product.php</url>
+</link>
+<link>
+<title>Children books</title>
+<url>product.php</url>
+</link>
+<link>
+<title>Intiutive books</title>
+<url>
+product.php
+</url>
+</link>
+<link>
+<title>Comic books</title>
+<url>product.php</url>
+</link>
+<link>
+<title>Games for Pc</title>
+<url>product1.php</url>
+</link>
+<link>
+<title>Pc games</title>
+<url>product1.php</url>
+</link>
+</pages>

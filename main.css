@@ -1,0 +1,45 @@
+.d1
+{
+ width:200px;
+ border:2px solid lightblue;
+ float:left;
+ margin:1%;
+ 
+}
+.d1 img
+{
+ width:150px;
+ height:150px;
+ position:relative;
+ top:10px;
+ left:20px;
+}
+ul
+{list-style-type:none;
+ margin:0;
+ padding:0;
+ overflow:hidden;
+ background-color:#333333;
+}
+
+li
+{float:left;
+}
+li a
+{display:block;
+ color:white;
+ padding:20px;
+ margin:5px;
+ text-align:center;
+ text-decoration:none;
+}
+li a:hover
+{background-color:#111111;
+ text-decoration:underline;
+}
+#d2
+{ 
+ position:relative;
+ 
+ width:100%;
+}
